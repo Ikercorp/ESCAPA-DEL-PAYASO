@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Escapa del Payaso</title>
+<link rel="stylesheet" href="app.css">
+</head>
+<body>
+<h1>🤡 Escapa del Payaso 🤡</h1>
+
+<div id="config-panel">
+  <h2>Configuración del juego</h2>
+  <label for="enemyCount">Número de payasos:</label>
+  <input type="number" id="enemyCount" value="1" min="1" max="10"><br>
+
+  <label for="playerSpeed">Velocidad del jugador:</label>
+  <input type="range" id="playerSpeed" min="1" max="10" value="5">
+  <span id="playerSpeedVal">5</span><br>
+
+  <label for="enemySpeed">Velocidad del payaso:</label>
+  <input type="range" id="enemySpeed" min="1" max="10" value="3">
+  <span id="enemySpeedVal">3</span><br>
+
+  <label for="background">Fondo:</label>
+  <select id="background">
+    <option value="#f0f0f0">Claro</option>
+    <option value="#d1f7c4">Verde</option>
+    <option value="#c4d7f7">Azul</option>
+    <option value="#f7c4c4">Rojo</option>
+    <option value="https://i.imgur.com/7vQG6Jz.jpeg">Ciudad</option>
+  </select><br><br>
+
+  <button id="startButton">Iniciar Juego</button>
+</div>
+
+<div id="game-area" class="hidden">
+  <div id="player"></div>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>

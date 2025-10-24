@@ -1,0 +1,44 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background-color: #222;
+  color: white;
+}
+
+h1 { margin-top: 20px; }
+
+#config-panel {
+  background: rgba(255,255,255,0.1);
+  padding: 20px;
+  border-radius: 10px;
+  width: 320px;
+  margin: 30px auto;
+}
+
+.hidden { display: none; }
+
+#game-area {
+  width: 800px;
+  height: 600px;
+  position: relative;
+  border: 2px solid #fff;
+  overflow: hidden;
+  margin: 0 auto;
+  background-size: cover;
+  background-position: center;
+}
+
+#player {
+  width: 50px;
+  height: 50px;
+  background-image: url('amarrillo.png');
+  background-size: cover;
+  position: absolute;
+}
+
+.enemy {
+  position: absolute;
+  background-image: url('it.png');
+  background-size: cover;
+  border: 1px solid #000;
+}
